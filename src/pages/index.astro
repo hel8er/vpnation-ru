@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Hero from '../components/Hero.astro';
+import VpnSwitch from '../components/VpnSwitch.astro';
+import Collapse from '../components/Collapse.astro';
+import Feature from '../components/Feature.astro';
+---
+
+<Layout title="VPNation.ru">
+<main>
+<Hero />
+
+<Feature slug="smartrouting" title="Компромисная маршрутизация" pic="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/7b366792561937.5e4e39ef183ee.jpg">
+    Позволяет нашим пользователям получать доступ к российским сервисам максимально быстро,
+    сохранив при этом возможность доступа к заблокированным ресурсам.
+</Feature>
+<Feature slug="adblock" title="Блокировщик рекламы" pic="https://techcrunch.com/wp-content/uploads/2016/11/laptop-adblock.png">
+    Уже встроен в наш VPN, блокирует рекламу на сайтах, в приложениях, и в частности видеосервисах
+</Feature>
+
+<Feature slug="flexible" title="Гибкая конфигурация" pic="https://avatars.mds.yandex.net/i?id=478759f4f07e4863473a881f70113be9-7049882-images-thumbs&n=13">
+    Настроим Ваш личный VPN-туннель под ваши задачи.
+</Feature>
+
+<Feature slug="pricing" title="Доступные тарифы" pic="https://d1h69ey09xg1xv.cloudfront.net/wp-content/uploads/2015/07/online-shopping-ecommerce-ss-1920.png">
+    <ul>
+        <li>1 месяц - 300р</li>
+        <li>2 месяца - 500р</li>
+        <li>3 месяца - 650р</li>
+    </ul>
+</Feature>
+    <!-- <Collapse >
+<p slot='title' >Умная маршрутизация</p>
+<p>
+    Базовый вариант: основной трафик не выходит за пределы РФ, поэтому российские сервисы с нашим VPN работают как обычно и быстрее чем через обычныйVPN. Трафик до заблокированных ресурсов идет через европейские сервера. Доступно также полное туннелирование трафика на случай если блокировка установлена не со стороны Роскомнадзора а сервис со своей стороны сам фильтрует пользователей из РФ. Возможен выбор сервера в определенном регионе(обсуждается с администратором, доступность подключения через определенный регион постоянно меняется)
+</p>
+</Collapse> -->
+<!-- <VpnSwitch /> -->
+</main>
+</Layout>
+
